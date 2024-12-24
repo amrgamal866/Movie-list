@@ -1,0 +1,23 @@
+2024-12-24 04:16:37 - Starting MovieListApplication using Java 1.8.0_421 on DESKTOP-55GBKNG with PID 13352 (C:\Users\pc\Downloads\Movie-list\Movie-list\target\classes started by pc in C:\Users\pc\Downloads\Movie-list)
+2024-12-24 04:16:37 - Running with Spring Boot v2.5.8, Spring v5.3.14
+2024-12-24 04:16:37 - No active profile set, falling back to default profiles: default
+2024-12-24 04:16:39 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 04:16:39 - Starting service [Tomcat]
+2024-12-24 04:16:39 - Starting Servlet engine: [Apache Tomcat/9.0.56]
+2024-12-24 04:16:39 - Initializing Spring embedded WebApplicationContext
+2024-12-24 04:16:39 - HikariPool-1 - Starting...
+2024-12-24 04:16:39 - HikariPool-1 - Start completed.
+2024-12-24 04:16:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 04:16:40 - HHH000412: Hibernate ORM core version 5.4.33
+2024-12-24 04:16:40 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-24 04:16:40 - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-12-24 04:16:41 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-24 04:16:41 - Filter 'jwtAuthenticationFilter' configured for use
+2024-12-24 04:16:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 04:16:42 - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 04:16:42 - Started MovieListApplication in 5.087 seconds (JVM running for 6.308)
+2024-12-24 04:16:53 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 04:19:48 - Request to rate movie: 1
+2024-12-24 04:21:35 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2024-12-24 04:21:35 - HikariPool-1 - Shutdown initiated...
+2024-12-24 04:21:35 - HikariPool-1 - Shutdown completed.
