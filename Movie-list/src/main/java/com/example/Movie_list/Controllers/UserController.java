@@ -23,10 +23,7 @@ public class UserController {
     @Autowired
     private MovieService movieService;
 
-   /* @GetMapping("/movies")
-    public List<Movie> getAllMovies() {
-        return movieService.findAll();
-    }*/
+
    @GetMapping("/movies")
    public Page<Movie> getAllMovies(@RequestParam(defaultValue = "0") int page,
                                    @RequestParam(defaultValue = "10") int size) {

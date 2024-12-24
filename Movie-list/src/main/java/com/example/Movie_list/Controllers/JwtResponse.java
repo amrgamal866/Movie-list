@@ -15,5 +15,4 @@ public class JwtResponse {
         this.token = token;
     }
 
-    // Getter and Setter
 }

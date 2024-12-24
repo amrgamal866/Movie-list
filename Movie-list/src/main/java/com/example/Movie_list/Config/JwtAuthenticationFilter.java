@@ -88,7 +88,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             // Extract roles from the token
             List<String> roles = jwtUtil.extractRoles(token);
 
-            // Load user details (this is optional if you need more user-specific data)
             // CustomUserDetails customUserDetails = customUserDetailsService.loadUserByUsername(username);
 
             // Convert roles to authorities (Spring Security format)

@@ -39,7 +39,6 @@ public class AdminController {
     }
     @PostMapping("/deleteMovies")
     public String deleteMovies(@RequestBody List<Long> movieIds) {
-        // Loop through the list of IDs and delete each one
         for (Long id : movieIds) {
             movieService.deleteById(id);  // Delete movie by its ID
         }

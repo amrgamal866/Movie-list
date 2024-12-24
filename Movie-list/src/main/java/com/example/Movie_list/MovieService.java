@@ -31,7 +31,7 @@ public class MovieService {
         }
         catch (ResourceNotFoundException ex) {
             logger.error("Movie with ID {} not found", id);
-            throw ex; // Re-throw the exception so it can be handled globally
+            throw ex;
         }
 
     }
@@ -58,7 +58,7 @@ public class MovieService {
     public void saveRating(Long movieId, int rating) {
         Movie movie = movieRepository.findById(movieId).orElseThrow(() -> new RuntimeException("Movie not found"));
         movie.setRating(rating);
-        movieRepository.save(movie); // Save the updated movie with the new rating
+        movieRepository.save(movie);
     }
 
 }
