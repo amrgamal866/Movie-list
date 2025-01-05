@@ -12,7 +12,6 @@ public class ApiError {
         this.error = error;
     }
 
-    // Getters and Setters
     public int getStatus() {
         return status;
     }

@@ -28,12 +28,10 @@ public class DataInitializer {
         return args -> {
             PasswordEncoder encoder = new BCryptPasswordEncoder();
 
-            // Check if roles already exist, if not, create them
             Role adminRole = roleRepository.findByName("ADMIN").orElseGet(() -> roleRepository.save(new Role("ADMIN")));
             Role userRole = roleRepository.findByName("USER").orElseGet(() -> roleRepository.save(new Role("USER")));
 
             if (userRepository.count() == 0) {
-                // Create users and assign roles
                 Set<Role> adminRoles = new HashSet<>();
                 adminRoles.add(adminRole);
                 User admin = new User("admin", encoder.encode("adminPassword"), adminRoles);

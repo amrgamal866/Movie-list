@@ -23,7 +23,6 @@ public class CustomUserDetailsService implements org.springframework.security.co
         User user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
 
-        // Return a Spring Security User object with username, encoded password, and roles
         return new org.springframework.security.core.userdetails.User(
                 user.getUsername(),
                 user.getPassword(),
